@@ -14,8 +14,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="../static/css/Main_Style-Sheet.css">
-  <link rel="shortcut icon" href="../static/images/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./resources/scripts/Main_Style-Sheet.css">
+  <link rel="shortcut icon" href="./resources/assests/favicon.svg" type="image/x-icon">
 
   <title>Rent House Online</title>
 </head>
@@ -35,17 +35,22 @@
         <div class="collapse navbar-collapse" id="navmenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="#Aims" class="nav-link">Home</a>
+              <a href="#aims" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#AboutMe" class="nav-link">About</a>
+              <a href="#about" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a th:unless="${session.user != null}" class="nav-link" href="login">Login</a>
-              <a th:if="${session.user != null}" class="nav-link" href="index">Logout</a>
+              <a href="#contact" class="nav-link">Contact</a>
             </li>
             <li class="nav-item">
-              <a href="./contact.html" class="nav-link">News</a>
+              <a href="#hotels" class="nav-link">Hotels</a>
+            </li>
+            <li class="nav-item">
+              <a href="#register" class="nav-link">Register</a>
+            </li>
+            <li class="nav-item">
+              <a href="#news" class="nav-link">News</a>
             </li>
           </ul>
         </div>
@@ -58,6 +63,7 @@
   <main>
     
     <!-- Front Section -->
+    <div class="aims" id="aims"> 
     <section class="bg-dark text-light p-5 mt-5 text-center">
       <div class="container">
         <div class="d-sm-flex align-items-center justify-content-between">
@@ -100,7 +106,7 @@
         
       </div>
     </section>
-
+  </div>
     <!-- NewsLetter Sign Up -->
     <section class="bg-primary text-light p-5">
       <div class="container">
@@ -116,23 +122,172 @@
     </section>
 
     <!-- Marketing Pitch -->
+    <div class="about" id="about"> 
+      <section class="text-dark bg-light p-5" >
+        
+        <div class="container">
+  
+          <div class="m-5 text-center">
+            <h1>Discover the Places </h1>
+            <h3 class="my-3"> Quick & Easy</h3>
+          </div>
+  
+          <div class="row g-4">
+          
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex align-items-stretch">
+          <div class="card text-center">
+            <img class="card-img-top cardImgs" src="../static/images/Places/0.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Luxury and Quality</h5>
+              <p class="card-text">We make sure all our homes meet our club’s standards: ideal location, well-appointed, and beautiful view. Choose from thousands of stays in luxury villas, estates, five-star resorts, and even yachts. We negotiate free additional services such as parking directly at the house, free upgrades to the next higher room category. </p>
+            </div>
+          </div>
+          
+          </div>
+  
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex align-items-stretch">
+          <div class="card text-center">
+            <img class="card-img-top cardImgs" src="../static/images/Places/1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Search Fast, Search Smart</h5>
+              <p class="card-text">By booking direct, you can take advantage of discounted member rates and will be sure to earn loyalty points and elite night credits. With our website you can easily find your ideal house. Simply enter where you want to go and your desired travel dates, and let us to offer you the best place with best prices. we are here to serve you.</p>
+            </div>
+          </div>
+          </div>
+  
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex align-items-stretch">
+          <div class="card text-center" >
+            <img class="card-img-top cardImgs" src="../static/images/Places/2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title"> Real Feel For The Place</h5>
+              <p class="card-text">Our site offers the ideal companion for business travel. Travelers and travel managers in small and medium-sized companies benefit from fast and easy online hotel bookings as well as customized solutions before, during and after their hotel stay. Standard bookings here can be canceled free of charge before one day of the arrival.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex align-items-stretch">
+          <div class="card text-center" >
+            <img class="card-img-top cardImgs" src="../static/images/Places/3.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Safe and Sound </h5>
+              <p class="card-text">You can be sure that the accommodation is as advertised. We hold on to the first month’s rent and your deposit until 48 hours after your move-in. We also have anti-fraud regulations, and, if the advertiser cancels, you get your money back, flexibility is particularly important for business travelers</p>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+  
+        <div class="row">
+          <div class="text-center mt-5">
+            <h3 class="mb-4">For as low as <span id="EMPH">50€/day</span>!</h3>
+  
+            <button class="btn btn-success btn-lg" type="button" >Book now</button> 
+            </div>
+        </div>
+        </div>
+        
+      </section>
+  
+  </div>
+
+ <!-- Contact Section-->
+ <div class="contact" id="contact">  
+ <section class="text-dark bg-light p-5">
+        
+  <div class="container">
+
+    <div class="m-5 text-center">
+      <h1>We are ready to serve you</h1>
+      <h3 class="my-3"> Contact us</h3>
+    </div>
+
+    <div class="row g-4">
+    
+    <div class="col-6 col-sm-4  col-md-3 mb-3 d-flex align-items-stretch">
+    <div class="card text-center CONTACT_CARD">
+      <img class="card-img-top cardImgs" src="../static/images/People/1.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Kelly Kim</h5>
+        <p class="card-text">
+          <a class="link-dark" href=""><i class="fa fa-instagram" aria-hidden="true"></a></i>
+          <a class="link-dark" href=""><i class="fa fa-twitter" aria-hidden="true"></a></i>
+          <a class="link-dark" href=""><i class="fa fa-whatsapp" aria-hidden="true"></a></i>
+          <a class="link-dark" href=""><i class="fa fa-linkedin" aria-hidden="true"></a></i>
+        </p>
+      </div>
+    </div>
+    
+    </div>
+
+    <div class="col-6 col-sm-4  col-md-3 mb-3 d-flex align-items-stretch">
+    <div class="card text-center CONTACT_CARD">
+      <img class="card-img-top cardImgs" src="../static/images/People/2.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">  Calvin Davis  </h5>
+        <p class="card-text">
+          <a class="link-dark" href=""><i class="fa fa-instagram" aria-hidden="true"></a></i>
+          <a class="link-dark" href=""><i class="fa fa-twitter" aria-hidden="true"></a></i>
+          <a class="link-dark" href=""><i class="fa fa-whatsapp" aria-hidden="true"></a></i>
+          <a class="link-dark" href=""><i class="fa fa-linkedin" aria-hidden="true"></a></i>
+        </p>
+      </div>
+    </div>
+    </div>
+
+    <div class="col-6 col-sm-4  col-md-3 mb-3 d-flex align-items-stretch">
+    <div class="card text-center CONTACT_CARD" >
+      <img class="card-img-top cardImgs" src="../static/images/People/3.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title"> Ashly Reven </h5>
+        <p class="card-text">
+          <a class="link-dark" href=""><i class="fa fa-instagram" aria-hidden="true"></a></i>
+          <a class="link-dark" href=""><i class="fa fa-twitter" aria-hidden="true"></a></i>
+          <a class="link-dark" href=""><i class="fa fa-whatsapp" aria-hidden="true"></a></i>
+          <a class="link-dark" href=""><i class="fa fa-linkedin" aria-hidden="true"></a></i>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6 col-sm-4  col-md-3 mb-3 d-flex align-items-stretch">
+    <div class="card text-center CONTACT_CARD" >
+      <img class="card-img-top cardImgs" src="../static/images/People/4.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title"> John Smith  </h5>
+        <p class="card-text">
+          <a class="link-dark" href=""><i class="fa fa-instagram" aria-hidden="true"></a></i>
+          <a class="link-dark" href=""><i class="fa fa-twitter" aria-hidden="true"></a></i>
+          <a class="link-dark" href=""><i class="fa fa-whatsapp" aria-hidden="true"></a></i>
+          <a class="link-dark" href=""><i class="fa fa-linkedin" aria-hidden="true"></a></i>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  
+</section>
+</div>
+  <!-- hotel section starts  -->
+  <div class="hotels" id="hotels"> 
     <section class="text-dark bg-light p-5" >
         
       <div class="container">
 
         <div class="m-5 text-center">
-          <h1>Discover the Places </h1>
-          <h3 class="my-3"> Quick & Easy</h3>
+          <h1>Get Inspiration for Your Trip </h1>
+          <h3 class="my-3"> Perfect Hotels </h3>
         </div>
 
         <div class="row g-4">
         
           <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex align-items-stretch">
         <div class="card text-center">
-          <img class="card-img-top cardImgs" src="../static/images/Places/0.jpg" alt="Card image cap">
+          <img class="card-img-top cardImgs" src="../static/images/Places/6.jpg" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Luxury and Quality</h5>
-            <p class="card-text">We make sure all our homes meet our club’s standards: ideal location, well-appointed, and beautiful view. Choose from thousands of stays in luxury villas, estates, five-star resorts, and even yachts. We negotiate free additional services such as parking directly at the house, free upgrades to the next higher room category. </p>
+            <h5 class="card-title">London, United Kingdom</h5>
+            <p class="card-text">Book the hotel for a night: 80€ </p>
+            <a class="text-bg-dark" href="london.html">Check it now!</a></i>
           </div>
         </div>
         
@@ -140,125 +295,48 @@
 
         <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex align-items-stretch">
         <div class="card text-center">
-          <img class="card-img-top cardImgs" src="../static/images/Places/1.jpg" alt="Card image cap">
+          <img class="card-img-top cardImgs" src="../static/images/Places/7.jpg" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Search Fast, Search Smart</h5>
-            <p class="card-text">By booking direct, you can take advantage of discounted member rates and will be sure to earn loyalty points and elite night credits. With our website you can easily find your ideal house. Simply enter where you want to go and your desired travel dates, and let us to offer you the best place with best prices. we are here to serve you.</p>
+            <h5 class="card-title">Paris, France</h5>
+            <p class="card-text"> Book the hotel for a night: 60€</p>
+            <a class="text-bg-dark" href="paris.html">Check it now!</a></i>
+
           </div>
         </div>
         </div>
 
         <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex align-items-stretch">
         <div class="card text-center" >
-          <img class="card-img-top cardImgs" src="../static/images/Places/2.jpg" alt="Card image cap">
+          <img class="card-img-top cardImgs" src="../static/images/Places/5.jpg" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title"> Real Feel For The Place</h5>
-            <p class="card-text">Our site offers the ideal companion for business travel. Travelers and travel managers in small and medium-sized companies benefit from fast and easy online hotel bookings as well as customized solutions before, during and after their hotel stay. Standard bookings here can be canceled free of charge before one day of the arrival.</p>
+            <h5 class="card-title"> Barcelona, Spain</h5>
+            <p> Book the hotel for a night: 55€</p>
+            <a class="text-bg-dark" href="barcelona.html">Check it now!</a></i>
+
           </div>
         </div>
       </div>
 
       <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex align-items-stretch">
         <div class="card text-center" >
-          <img class="card-img-top cardImgs" src="../static/images/Places/3.jpg" alt="Card image cap">
+          <img class="card-img-top cardImgs" src="../static/images/Places/4.jpg" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Safe and Sound </h5>
-            <p class="card-text">You can be sure that the accommodation is as advertised. We hold on to the first month’s rent and your deposit until 48 hours after your move-in. We also have anti-fraud regulations, and, if the advertiser cancels, you get your money back, flexibility is particularly important for business travelers</p>
+            <h5 class="card-title">Rome, Italy  </h5>
+            <p class="card-text">Book the hotel for a night: 75€</p>
+            <a class="text-bg-dark" href="rome.html">Check it now!</a></i>
+
           </div>
         </div>
       </div>
       
       </div>
 
-      <div class="row">
-        <div class="text-center mt-5">
-          <h3 class="mb-4">For as low as <span id="EMPH">50€/day</span>!</h3>
-
-          <button class="btn btn-success btn-lg" type="button" >Book now</button> 
-          </div>
-      </div>
-      </div>
-      
     </section>
-
-    <!-- Contact Section-->
-    <section class="text-dark bg-light p-5">
-        
-      <div class="container">
-
-        <div class="m-5 text-center">
-          <h1>We are ready to serve you</h1>
-          <h3 class="my-3"> Contact us</h3>
-        </div>
-
-        <div class="row g-4">
-        
-        <div class="col-6 col-sm-4  col-md-3 mb-3 d-flex align-items-stretch">
-        <div class="card text-center CONTACT_CARD">
-          <img class="card-img-top cardImgs" src="../static/images/People/1.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Kelly Kim</h5>
-            <p class="card-text">
-              <a class="link-dark" href=""><i class="fa fa-instagram" aria-hidden="true"></a></i>
-              <a class="link-dark" href=""><i class="fa fa-twitter" aria-hidden="true"></a></i>
-              <a class="link-dark" href=""><i class="fa fa-whatsapp" aria-hidden="true"></a></i>
-              <a class="link-dark" href=""><i class="fa fa-linkedin" aria-hidden="true"></a></i>
-            </p>
-          </div>
-        </div>
-        
-        </div>
-
-        <div class="col-6 col-sm-4  col-md-3 mb-3 d-flex align-items-stretch">
-        <div class="card text-center CONTACT_CARD">
-          <img class="card-img-top cardImgs" src="../static/images/People/2.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">  Calvin Davis  </h5>
-            <p class="card-text">
-              <a class="link-dark" href=""><i class="fa fa-instagram" aria-hidden="true"></a></i>
-              <a class="link-dark" href=""><i class="fa fa-twitter" aria-hidden="true"></a></i>
-              <a class="link-dark" href=""><i class="fa fa-whatsapp" aria-hidden="true"></a></i>
-              <a class="link-dark" href=""><i class="fa fa-linkedin" aria-hidden="true"></a></i>
-            </p>
-          </div>
-        </div>
-        </div>
-
-        <div class="col-6 col-sm-4  col-md-3 mb-3 d-flex align-items-stretch">
-        <div class="card text-center CONTACT_CARD" >
-          <img class="card-img-top cardImgs" src="../static/images/People/3.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title"> Ashly Reven </h5>
-            <p class="card-text">
-              <a class="link-dark" href=""><i class="fa fa-instagram" aria-hidden="true"></a></i>
-              <a class="link-dark" href=""><i class="fa fa-twitter" aria-hidden="true"></a></i>
-              <a class="link-dark" href=""><i class="fa fa-whatsapp" aria-hidden="true"></a></i>
-              <a class="link-dark" href=""><i class="fa fa-linkedin" aria-hidden="true"></a></i>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-6 col-sm-4  col-md-3 mb-3 d-flex align-items-stretch">
-        <div class="card text-center CONTACT_CARD" >
-          <img class="card-img-top cardImgs" src="../static/images/People/4.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title"> John Smith  </h5>
-            <p class="card-text">
-              <a class="link-dark" href=""><i class="fa fa-instagram" aria-hidden="true"></a></i>
-              <a class="link-dark" href=""><i class="fa fa-twitter" aria-hidden="true"></a></i>
-              <a class="link-dark" href=""><i class="fa fa-whatsapp" aria-hidden="true"></a></i>
-              <a class="link-dark" href=""><i class="fa fa-linkedin" aria-hidden="true"></a></i>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      </div>
-      
-    </section>
+  </div>
+  <!-- hotel section ends -->
 
     <!-- Register Section-->
+    <div class="register" id="register"> 
     <section class="text-dark bg-light p-5">
       <div class="container">
 
@@ -313,8 +391,9 @@
 
       </div>
     </section>
-
+  </div>
     <!-- News Section-->
+    <div class="news" id="news">  
     <section class="text-dark bg-light p-5">
       <div class="container">
 
@@ -368,7 +447,7 @@
 
       </div>
     </section>
-
+  </div>
 
 
   </main>
