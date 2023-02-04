@@ -1,3 +1,4 @@
+
 package com.webdev22_23.webdevelopment_project.database.dao.interfaces;
 
 import com.webdev22_23.webdevelopment_project.database.model.Room;

@@ -1,3 +1,4 @@
+
 package com.webdev22_23.webdevelopment_project.database;
 
 import com.webdev22_23.webdevelopment_project.database.dao.implementations.PictureDaoImpl;
