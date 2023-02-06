@@ -1,8 +1,8 @@
 
-#EMPH { color: #00b7ff;}
+/* #EMPH { color: #00b7ff;}
 
-#PG_BTN {background-color: #00a2ff;}
-/* .cardImgs { height: 20rem;} */
+#PG_BTN {background-color: #00a2ff;}*/
+.cardImgs { height: 20rem;} 
 .CONTACT_CARD { width: 15rem; }
 
 .carousel-caption {
